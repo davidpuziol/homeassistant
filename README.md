@@ -1,2 +1,2 @@
 # homeassistant
-Meu projeto de home assistant
+My Home Assistant Project
