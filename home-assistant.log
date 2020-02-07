@@ -1,0 +1,204 @@
+2020-02-07 05:23:27 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry UPnP/IGD for upnp
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/async_upnp_client/aiohttp.py", line 103, in async_do_http_request
+    async with self._session.request(method, url, headers=headers, data=body) as response:
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 1012, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 945, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 215, in async_setup
+    hass, self
+  File "/usr/src/homeassistant/homeassistant/components/upnp/__init__.py", line 148, in async_setup_entry
+    device = await async_discover_and_construct(hass, config_entry.data.get("udn"))
+  File "/usr/src/homeassistant/homeassistant/components/upnp/__init__.py", line 117, in async_discover_and_construct
+    return await Device.async_create_device(hass, ssdp_description)
+  File "/usr/src/homeassistant/homeassistant/components/upnp/device.py", line 57, in async_create_device
+    upnp_device = await factory.async_create_device(ssdp_description)
+  File "/usr/local/lib/python3.7/site-packages/async_upnp_client/client_factory.py", line 52, in async_create_device
+    root = await self._async_get_url_xml(description_url)
+  File "/usr/local/lib/python3.7/site-packages/async_upnp_client/client_factory.py", line 290, in _async_get_url_xml
+    await self.requester.async_http_request('GET', url)
+  File "/usr/local/lib/python3.7/site-packages/async_upnp_client/client.py", line 70, in async_http_request
+    body_type=body_type)
+  File "/usr/local/lib/python3.7/site-packages/async_upnp_client/aiohttp.py", line 113, in async_do_http_request
+    resp_body = None
+  File "/usr/local/lib/python3.7/site-packages/async_timeout/__init__.py", line 55, in __aexit__
+    self._do_exit(exc_type)
+  File "/usr/local/lib/python3.7/site-packages/async_timeout/__init__.py", line 92, in _do_exit
+    raise asyncio.TimeoutError
+concurrent.futures._base.TimeoutError
+2020-02-07 05:24:57 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:25:01 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:25:07 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:26:46 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:26:51 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:34:25 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:34:30 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:34:45 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.139667007422224] 'person'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 134, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1226, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1251, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 424, in admin_handler
+    await hass.async_add_job(service_func, call)
+  File "/usr/src/homeassistant/homeassistant/components/person/__init__.py", line 318, in async_reload_yaml
+    await yaml_collection.async_load(await filter_yaml_data(hass, conf[DOMAIN]))
+KeyError: 'person'
+2020-02-07 05:34:53 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:00 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:04 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:51 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:55 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:56 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:56 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:35:58 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:39:58 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:40:01 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:40:05 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:40:07 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:40:19 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:40:32 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:42:32 ERROR (MainThread) [homeassistant.components.script] Error executing script script.pc_off. Service not found for call_service at pos 1: Unable to find service joaoapps_join/join_devices_send_tasker
+2020-02-07 05:42:43 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.139667092604432] must contain at least one of entity_id, area_id.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 817, in validate_callable
+    return schema(data)
+  File "/usr/src/homeassistant/homeassistant/helpers/config_validation.py", line 105, in validate
+    raise vol.Invalid("must contain at least one of {}.".format(", ".join(keys)))
+voluptuous.error.Invalid: must contain at least one of entity_id, area_id.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 134, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1204, in async_call
+    processed_data = handler.schema(service_data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 208, in __call__
+    return self._exec((Schema(val) for val in self.validators), v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 287, in _exec
+    raise e if self.msg is None else AllInvalid(self.msg, path=path)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 283, in _exec
+    v = func(v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 276, in __call__
+    raise er.MultipleInvalid([e])
+voluptuous.error.MultipleInvalid: must contain at least one of entity_id, area_id.
+2020-02-07 05:42:47 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.139667092604432] must contain at least one of entity_id, area_id.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 817, in validate_callable
+    return schema(data)
+  File "/usr/src/homeassistant/homeassistant/helpers/config_validation.py", line 105, in validate
+    raise vol.Invalid("must contain at least one of {}.".format(", ".join(keys)))
+voluptuous.error.Invalid: must contain at least one of entity_id, area_id.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 134, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1204, in async_call
+    processed_data = handler.schema(service_data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 208, in __call__
+    return self._exec((Schema(val) for val in self.validators), v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 287, in _exec
+    raise e if self.msg is None else AllInvalid(self.msg, path=path)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 283, in _exec
+    v = func(v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 276, in __call__
+    raise er.MultipleInvalid([e])
+voluptuous.error.MultipleInvalid: must contain at least one of entity_id, area_id.
+2020-02-07 05:42:50 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.139667092604432] must contain at least one of entity_id, area_id.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 817, in validate_callable
+    return schema(data)
+  File "/usr/src/homeassistant/homeassistant/helpers/config_validation.py", line 105, in validate
+    raise vol.Invalid("must contain at least one of {}.".format(", ".join(keys)))
+voluptuous.error.Invalid: must contain at least one of entity_id, area_id.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 134, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1204, in async_call
+    processed_data = handler.schema(service_data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 208, in __call__
+    return self._exec((Schema(val) for val in self.validators), v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 287, in _exec
+    raise e if self.msg is None else AllInvalid(self.msg, path=path)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 283, in _exec
+    v = func(v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 276, in __call__
+    raise er.MultipleInvalid([e])
+voluptuous.error.MultipleInvalid: must contain at least one of entity_id, area_id.
+2020-02-07 05:42:51 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.139667092604432] must contain at least one of entity_id, area_id.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 817, in validate_callable
+    return schema(data)
+  File "/usr/src/homeassistant/homeassistant/helpers/config_validation.py", line 105, in validate
+    raise vol.Invalid("must contain at least one of {}.".format(", ".join(keys)))
+voluptuous.error.Invalid: must contain at least one of entity_id, area_id.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 134, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1204, in async_call
+    processed_data = handler.schema(service_data)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 208, in __call__
+    return self._exec((Schema(val) for val in self.validators), v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 287, in _exec
+    raise e if self.msg is None else AllInvalid(self.msg, path=path)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/validators.py", line 283, in _exec
+    v = func(v)
+  File "/usr/local/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 276, in __call__
+    raise er.MultipleInvalid([e])
+voluptuous.error.MultipleInvalid: must contain at least one of entity_id, area_id.
+2020-02-07 08:57:40 ERROR (Thread-2) [pychromecast.socket_client] [MIBOX3 SALA:8009] Error reading from socket.
+2020-02-07 08:57:40 WARNING (Thread-2) [pychromecast.socket_client] [MIBOX3 SALA:8009] Error communicating with socket, resetting connection
+2020-02-07 08:57:40 ERROR (Thread-2) [pychromecast.socket_client] [MIBOX3 SALA:8009] Failed to connect to service MIBOX3-523397d00c1654cc2dc4b0ba31143dd6._googlecast._tcp.local., retrying in 5.0s
+2020-02-07 12:00:27 ERROR (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error reading from socket.
+2020-02-07 12:00:27 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error communicating with socket, resetting connection
+2020-02-07 12:00:27 ERROR (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Failed to connect to service MIBOX3-c3e3f9eafe194476ce43eeee5ec3607e._googlecast._tcp.local., retrying in 5.0s
+2020-02-07 12:37:10 ERROR (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error reading from socket.
+2020-02-07 12:37:10 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error communicating with socket, resetting connection
+2020-02-07 12:37:20 ERROR (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error reading from socket.
+2020-02-07 12:37:20 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error communicating with socket, resetting connection
+2020-02-07 12:38:44 ERROR (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error reading from socket.
+2020-02-07 12:38:44 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error communicating with socket, resetting connection
+2020-02-07 12:40:01 ERROR (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error reading from socket.
+2020-02-07 12:40:01 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Error communicating with socket, resetting connection
+2020-02-07 12:40:21 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Heartbeat timeout, resetting connection
+2020-02-07 12:40:59 WARNING (Thread-3) [pychromecast.socket_client] [MIBOX3 SUITE:8009] Heartbeat timeout, resetting connection
+2020-02-07 15:07:32 ERROR (Thread-2) [pychromecast.socket_client] [MIBOX3 SALA:8009] Error reading from socket.
+2020-02-07 15:07:32 WARNING (Thread-2) [pychromecast.socket_client] [MIBOX3 SALA:8009] Error communicating with socket, resetting connection
+2020-02-07 15:07:32 ERROR (Thread-2) [pychromecast.socket_client] [MIBOX3 SALA:8009] Failed to connect to service MIBOX3-523397d00c1654cc2dc4b0ba31143dd6._googlecast._tcp.local., retrying in 5.0s

@@ -1,0 +1,23 @@
+{
+    "data": {
+        "config": {
+            "title": "Casa",
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [],
+                    "path": "luzes",
+                    "title": "Painel"
+                },
+                {
+                    "badges": [],
+                    "cards": [],
+                    "path": "teste",
+                    "title": "teste"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

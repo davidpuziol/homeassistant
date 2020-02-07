@@ -1,0 +1,7 @@
+#  Wake On Lan - PC
+- platform: wake_on_lan
+  name: "desktop-david"
+  mac: "70:85:c2:2d:2a:30"
+  host: 10.0.0.20
+  turn_off:
+    service: script.pc_off

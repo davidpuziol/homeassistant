@@ -1,0 +1,172 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "track_home": true
+                },
+                "domain": "met",
+                "entry_id": "2efe385340aa4c878f7ba6a6e944bef8",
+                "options": {},
+                "source": "onboarding",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": "0x4F, 0x2C, 0x43, 0x06, 0x24, 0x54, 0x28, 0x6B, 0x77, 0xDD, 0xBE, 0xE1, 0x4E, 0x57, 0xCF, 0x44",
+                    "usb_path": "/dev/ttyACM0"
+                },
+                "domain": "zwave",
+                "entry_id": "9742230111474504b03befa7c04eaf6e",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Z-Wave",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "e7Ilea5X7LU:APA91bHbcfkxzhGyOhTR8MLT7E_KLGXuPVrMpJVmIVlkPX_vpRlpvEOgOvEl8jMU0kZvBIP1whRY6_LATsg3Pmlu-o1rW8tb7ar_drqL_HcTcrO48YC9_GwmGhVlyh0ReNsUTeoO4i91",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "1.5.1 (97)",
+                    "device_id": "ea37156944e21c64",
+                    "device_name": "EML-L29",
+                    "manufacturer": "HUAWEI",
+                    "model": "EML-L29",
+                    "os_name": "Android",
+                    "os_version": "28",
+                    "supports_encryption": false,
+                    "user_id": "a751e208688f49daaa05e8cb53b9bee5",
+                    "webhook_id": "e76b419542367ebad7cc016f57e8dcad53813643ab1fc396271709f34c0d9c00"
+                },
+                "domain": "mobile_app",
+                "entry_id": "ff13218e924343ffaab54a7f8d6f2759",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "EML-L29",
+                "unique_id": "io.homeassistant.companion.android-ea37156944e21c64",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "user_id": "59bb58533ed64bd4bb4a3e063b918179"
+                },
+                "domain": "cast",
+                "entry_id": "e35e1bce953d4987bdddfafcd12403d9",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Google Cast",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "udn": "uuid:75802409-bccb-40e7-8e6c-fa095ecce13e"
+                },
+                "domain": "upnp",
+                "entry_id": "f720829944c547af91ef41340c96ab4d",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "UPnP/IGD",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "controller": {
+                        "host": "10.0.0.10",
+                        "password": "!Admin19divad",
+                        "port": 8443,
+                        "site": "default",
+                        "username": "admin",
+                        "verify_ssl": false
+                    }
+                },
+                "domain": "unifi",
+                "entry_id": "a14246e5ec72425597dfdc25cda1ad65",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Default",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "server": "PlexNAS",
+                    "server_config": {
+                        "client_id": "45fa3792-ec94-400f-81e4-7ffd45ded456",
+                        "token": "dsoGyNzRNuF_yHxzP8Kw",
+                        "url": "https://10-0-0-10.ad2c76e683b8476cb12d6f13237ff12a.plex.direct:32400",
+                        "verify_ssl": true
+                    },
+                    "server_id": "17df456b70b1459915a0e2ca4ed2718ebe2ef8ce"
+                },
+                "domain": "plex",
+                "entry_id": "26910d1e77bd4dafb5c3cd71fcd5b375",
+                "options": {
+                    "media_player": {
+                        "show_all_controls": true,
+                        "use_episode_art": true
+                    }
+                },
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "PlexNAS",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "cloudhook": false,
+                    "webhook_id": "638120310f96df01eeb89a95ae19e0fb0cffe8608a61c33c66ed90c7de5e3901"
+                },
+                "domain": "traccar",
+                "entry_id": "11460ee74c2f4b46a37a0e6978cda158",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Traccar Webhook",
+                "unique_id": null,
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

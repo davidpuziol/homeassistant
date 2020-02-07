@@ -1,0 +1,159 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "master"
+                },
+                "id": "8fd6b49a7f064b94a3193ac6d38b5fa7",
+                "user_id": "a751e208688f49daaa05e8cb53b9bee5"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "david"
+                },
+                "id": "8d293694315148249b326d8bbc9a0b34",
+                "user_id": "42587115fba94719b64286579eb3a6e2"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "mirna"
+                },
+                "id": "a272c6c2a7e14876b458c5d4e1b30cce",
+                "user_id": "546f779a06644bd4bd7f629a881ef483"
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": null,
+                "created_at": "2020-02-04T07:41:36.143910+00:00",
+                "id": "6c5a2e18ebc941218a629a89052c559b",
+                "jwt_key": "85e455389cc67a4bd1e74a8a14bdf052e48b0b57b67d9144a9a89ec9481edd823cee19e5182a5a770fec75880819381aea4f90202f24926df61c14a357334ac8",
+                "last_used_at": "2020-02-07T20:12:27.426550+00:00",
+                "last_used_ip": "172.30.32.2",
+                "token": "58b40b2ec296396e521505848c7de77c5f56e23427a27582434523967cb4888edda0ac50652a7ea427224519179f2da834be56447d349b3bfdbff56f1ef715a1",
+                "token_type": "system",
+                "user_id": "151ddf2a2b0a48c58445f61f67bd74bc"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://10.0.0.160:8123/",
+                "client_name": null,
+                "created_at": "2020-02-04T07:50:11.089276+00:00",
+                "id": "14bb9e3bb9614dea84a7c23a3faa8307",
+                "jwt_key": "a364ebd58a42afed6926122236f809bc609cf08717976ffde700b14d782c54b810294417d4be7c9edf5788e07c90a6c6a5ee9bfba77fad254bbeaed7ed4addc9",
+                "last_used_at": "2020-02-07T20:12:44.317809+00:00",
+                "last_used_ip": "10.0.0.20",
+                "token": "6003053c86e56ba0fa0a364e4120323ef086a8e0635f79f8fe5c3e8b95df4f1faff0a5a3cc32a1aecdd5e155c5411645bf1495eec5b57fea347f7aafd94ac50d",
+                "token_type": "normal",
+                "user_id": "a751e208688f49daaa05e8cb53b9bee5"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home-assistant.io/android",
+                "client_name": null,
+                "created_at": "2020-02-04T07:51:39.518311+00:00",
+                "id": "a58dfcc723744545b5bb71244bf96983",
+                "jwt_key": "436b9d28e63d437e9891f50ff4815c8eb0758b94250d318d6dc9925e4a8419ef47ea47e57fab4fe3ab6c2bb555d4fb8d5222de29baf245501083b700970bec4d",
+                "last_used_at": "2020-02-07T18:49:00.703404+00:00",
+                "last_used_ip": "177.25.176.210",
+                "token": "9ff3f5e9c6eb762197b660a0ddee4a4f3965411ed62005cb7e9079e0bdc9bdb4204c09547cf66b611f2af891ae5ec0e23fccb1154d6459c3aa44cdbe6f81001c",
+                "token_type": "normal",
+                "user_id": "a751e208688f49daaa05e8cb53b9bee5"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": null,
+                "created_at": "2020-02-04T19:30:17.001406+00:00",
+                "id": "28dafef5280d44cd9a1eea018eb756b6",
+                "jwt_key": "db13e0b098baadf8ee910e88865191c6f9563e1946c679e293378a6013ad887c361de7a0ed3578477d6453d86f9c10d37c2f776377d5579ac6a15f5a34595b54",
+                "last_used_at": null,
+                "last_used_ip": null,
+                "token": "5f74a2b070ab7c6ec48ce298b8c5dfb60fb93a1fe0db7ad021261306bf196f7780d16274a81bacbc44ea5bf0fb037dfbe97503d2cf985fa6d10224dfa1d5ed31",
+                "token_type": "system",
+                "user_id": "59bb58533ed64bd4bb4a3e063b918179"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "151ddf2a2b0a48c58445f61f67bd74bc",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "a751e208688f49daaa05e8cb53b9bee5",
+                "is_active": true,
+                "is_owner": true,
+                "name": "master",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "59bb58533ed64bd4bb4a3e063b918179",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Home Assistant Cast",
+                "system_generated": true
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "42587115fba94719b64286579eb3a6e2",
+                "is_active": true,
+                "is_owner": false,
+                "name": "David",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-users"
+                ],
+                "id": "546f779a06644bd4bd7f629a881ef483",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Mirna",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

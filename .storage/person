@@ -1,0 +1,16 @@
+{
+    "data": {
+        "items": [
+            {
+                "device_trackers": [
+                    "device_tracker.eml_l29"
+                ],
+                "id": "master",
+                "name": "master",
+                "user_id": "a751e208688f49daaa05e8cb53b9bee5"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 2
+}

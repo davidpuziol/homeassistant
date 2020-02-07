@@ -1,0 +1,9 @@
+# desktop-david
+  # liga e desliga
+pc_off:
+  alias: PC - Off
+  sequence:
+    - service: joaoapps_join.join_devices_send_tasker
+      data:
+        device-id: !secret join-device-id-desktop-david
+        command: shutdown

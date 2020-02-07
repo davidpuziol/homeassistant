@@ -1,0 +1,40 @@
+# Definido o titulo do Home Assistant
+title: Meu Home Assistant
+
+# as views sao as abas, ou seja, todas as suas páginas
+views:
+  # titulo da página 1
+  - title: view1
+    # O path defini o nome da pagina e o caminho unico para o diretorio
+    # nesse caso /lovelace/view1. Tb fica o nome na pagina na barra do navegador
+    path: view1
+    # Defini o icone desta pagina no lugar do path, caso nao tenha icone mostra o path
+    icon: mdi:home-assistant
+
+    # Os cards são estruturas internas das paginas vale uma pesquisa.
+    cards:
+    # CARD1
+    # Exemplo, cartao de remarcacao (Markdown) renderiza o texto na tela
+    - type: markdown
+      title: teste
+      content: >
+        Bem vindo ao seu **Lovelace-UI**
+    
+    # CARD2
+    # Exemplo, cartao de remarcacao (Markdown) renderiza o texto na tela
+    - type: markdown
+      content: >
+        Bem vindo ao seu **Lovelace-UI2**
+
+  # titulo da página 2
+  - title: view2
+    path: view2
+
+
+  # titulo da página 3
+  - title: view3
+    path: view3
+  # titulo da página 3
+  - title: view4
+    path: saruque
+    

@@ -1,0 +1,293 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "ff13218e924343ffaab54a7f8d6f2759"
+                ],
+                "connections": [],
+                "id": "a33f565557ff430e86f3f932a0e6a24e",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "ea37156944e21c64"
+                    ]
+                ],
+                "manufacturer": "HUAWEI",
+                "model": "EML-L29",
+                "name": "EML-L29",
+                "name_by_user": null,
+                "sw_version": "28",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "9742230111474504b03befa7c04eaf6e"
+                ],
+                "connections": [],
+                "id": "80c6784dedf542e28340ee2d16c87520",
+                "identifiers": [
+                    [
+                        "zwave",
+                        1
+                    ]
+                ],
+                "manufacturer": "AEON Labs",
+                "model": "ZW090 Z-Stick Gen5 EU",
+                "name": "AEON Labs ZW090 Z-Stick Gen5 EU",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "76699c1101d44854ade773c74785f475",
+                "config_entries": [
+                    "e35e1bce953d4987bdddfafcd12403d9"
+                ],
+                "connections": [],
+                "id": "94492db2bc784bfd91525ec3de43d008",
+                "identifiers": [
+                    [
+                        "cast",
+                        "22f62ba5eb8d7e8d3532b076d22ca639"
+                    ]
+                ],
+                "manufacturer": "Onkyo And Pioneer",
+                "model": "Pioneer VSX-932",
+                "name": "Pioneer ",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "76699c1101d44854ade773c74785f475",
+                "config_entries": [
+                    "e35e1bce953d4987bdddfafcd12403d9"
+                ],
+                "connections": [],
+                "id": "42b4b86dbdd54b20af0bc59a2f591593",
+                "identifiers": [
+                    [
+                        "cast",
+                        "523397d00c1654cc2dc4b0ba31143dd6"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "MIBOX3",
+                "name": "MIBOX3 SALA",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "b746d3bf9e2843b38d0a4f460c1eed7a",
+                "config_entries": [
+                    "e35e1bce953d4987bdddfafcd12403d9"
+                ],
+                "connections": [],
+                "id": "36b876ec27694bf19e9d242a4885df32",
+                "identifiers": [
+                    [
+                        "cast",
+                        "c3e3f9eafe194476ce43eeee5ec3607e"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "MIBOX3",
+                "name": "MIBOX3 SUITE",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "76699c1101d44854ade773c74785f475",
+                "config_entries": [
+                    "f720829944c547af91ef41340c96ab4d"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-8e6c-fa095ecce13e"
+                    ]
+                ],
+                "id": "3f61aa14573b4184b87f295916a914fd",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-8e6c-fa095ecce13e"
+                    ]
+                ],
+                "manufacturer": "Linux UPnP IGD Project",
+                "model": "IGD Version 1.00",
+                "name": "Linux Internet Gateway Device",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "607bc14d67de46fca28dfd7b05512273",
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f0:9f:c2:a6:d6:ed"
+                    ]
+                ],
+                "id": "eb11be9f576f46e697e51c6db989fa06",
+                "identifiers": [],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "U7LR",
+                "name": "UAP LR",
+                "name_by_user": null,
+                "sw_version": "4.0.42.10433",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d8:8f:76:48:54:c2"
+                    ]
+                ],
+                "id": "67da4f72ebc84f52b8045ce8c8e7ed8b",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "08:12:a5:43:dc:f6"
+                    ]
+                ],
+                "id": "05d635aa59aa410792a1bf70baaff9c3",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:97:f6:aa:91:a0"
+                    ]
+                ],
+                "id": "55bbcee1012e41d2b6605d7996312a89",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a4:93:3f:33:25:27"
+                    ]
+                ],
+                "id": "98986adb779f4c67a610514b76670150",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "4c:09:d4:47:0e:0c"
+                    ]
+                ],
+                "id": "e7d473205ed84a3984baf8a8cd8fcdbb",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:7d:6b:17:34:35"
+                    ]
+                ],
+                "id": "53ba1c6aff974185a726eedfce8b003d",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a14246e5ec72425597dfdc25cda1ad65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c4:57:6e:af:43:a2"
+                    ]
+                ],
+                "id": "538aa4e661f44d699d575dfc9f530360",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

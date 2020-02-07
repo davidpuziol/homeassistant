@@ -1,0 +1,56 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "76699c1101d44854ade773c74785f475",
+                "name": "Sala"
+            },
+            {
+                "id": "96f3f7ddab5e464abc164fff7fc375cc",
+                "name": "Cozinha"
+            },
+            {
+                "id": "b746d3bf9e2843b38d0a4f460c1eed7a",
+                "name": "Quarto Casal"
+            },
+            {
+                "id": "d832b14362124cfb9205935690a42958",
+                "name": "Quarto Bebe"
+            },
+            {
+                "id": "25ff9e9b0f734e84af53160ad878bd42",
+                "name": "Varanda"
+            },
+            {
+                "id": "80c2d61855b049c490d408a0e9cb6b6f",
+                "name": "Escritorio"
+            },
+            {
+                "id": "97d56a0b05534c7bb146e5235422f81b",
+                "name": "Area de servi\u00e7o"
+            },
+            {
+                "id": "607bc14d67de46fca28dfd7b05512273",
+                "name": "Corredor"
+            },
+            {
+                "id": "880016cea30a42569678986c37888da8",
+                "name": "Banheiro de Casal"
+            },
+            {
+                "id": "987fccd94eb8420a9e11d716ceadbcbb",
+                "name": "Banheiro Social"
+            },
+            {
+                "id": "53f5da7254a8420bb25e0165fc54b460",
+                "name": "Area T\u00e9cnica"
+            },
+            {
+                "id": "a79665af0a3c4c569bd147a6a36b3245",
+                "name": "Banheiro Empregada"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
+}

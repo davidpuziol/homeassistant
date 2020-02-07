@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-02-07T20:24:07.004505+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "master",
+                    "gps_accuracy": 15,
+                    "id": "master",
+                    "latitude": -20.3349828,
+                    "longitude": -40.2818951,
+                    "source": "device_tracker.eml_l29",
+                    "user_id": "a751e208688f49daaa05e8cb53b9bee5"
+                },
+                "context": {
+                    "id": "d113e318e0374784b30a2e5b6e2bb9a1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.master",
+                "last_changed": "2020-02-07T08:23:12.373132+00:00",
+                "last_updated": "2020-02-07T18:49:00.253163+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-02-07T20:24:07.004505+00:00",
+            "state": {
+                "attributes": {
+                    "altitude": 59.0,
+                    "battery_level": 94,
+                    "course": 0,
+                    "friendly_name": "Celular-David",
+                    "gps_accuracy": 15,
+                    "latitude": -20.3349828,
+                    "longitude": -40.2818951,
+                    "source_type": "gps",
+                    "speed": 0,
+                    "vertical_accuracy": 6
+                },
+                "context": {
+                    "id": "17915a2ee05d4d549d7efa32c67fd311",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.eml_l29",
+                "last_changed": "2020-02-07T08:23:12.578490+00:00",
+                "last_updated": "2020-02-07T18:49:00.252432+00:00",
+                "state": "home"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

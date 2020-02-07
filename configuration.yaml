@@ -1,0 +1,44 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+ # Criando o componente
+wake_on_lan:
+
+# Definindo os dispositivos com seus respectivos nomes, id e apikey do join que sera o futuro notificador
+joaoapps_join: 
+  - name: desktop-david
+    device_id: !secret join-device-id-desktop-david
+    api_key: !secret join-api-key
+  
+  - name: celular-david
+    device_id: !secret join-device_id-celular-david
+    api_key: !secret join-api-key  
+ 
+ # Definindo quem serão os dispositivos que podem ser notificados
+notify:
+  - platform: joaoapps_join
+    api_key: !secret join-api-key
+    device_id: !secret join-device-id-desktop-david
+    name: desktop-david
+
+  - platform: joaoapps_join
+    api_key: !secret join-api-key
+    device_id: !secret join-device_id-celular-david
+    name: celular-david
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+switch: !include switches.yaml
+
+
