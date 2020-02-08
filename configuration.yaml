@@ -1,14 +1,91 @@
-
+###################################################################################################################
+# ██╗  ██╗ ██████╗ ███╗   ███╗███████╗     █████╗ ███████╗███████╗██╗███████╗████████╗ █████╗ ███╗   ██╗████████╗ #
+# ██║  ██║██╔═══██╗████╗ ████║██╔════╝    ██╔══██╗██╔════╝██╔════╝██║██╔════╝╚══██╔══╝██╔══██╗████╗  ██║╚══██╔══╝ #
+# ███████║██║   ██║██╔████╔██║█████╗      ███████║███████╗███████╗██║███████╗   ██║   ███████║██╔██╗ ██║   ██║    #
+# ██╔══██║██║   ██║██║╚██╔╝██║██╔══╝      ██╔══██║╚════██║╚════██║██║╚════██║   ██║   ██╔══██║██║╚██╗██║   ██║    #
+# ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗    ██║  ██║███████║███████║██║███████║   ██║   ██║  ██║██║ ╚████║   ██║    #
+# ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    #                                                                                   
+###################################################################################################################
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-# http:
-#   base_url: example.duckdns.org:8123
+homeassistant:
+  name: !secret name
+  time_zone: !secret timezone
+  latitude: !secret latitude
+  longitude: !secret longitude
+  unit_system: metric
+  elevation: 0
+
+    # Arquivo de customização
+  #customize: !include configuration/customize.yaml
+
+  # Metodo de autenticação
+  #auth_providers:
+   #- type: trusted_networks 
+     #trusted_networks: 
+      #- 127.0.0.1 
+      #- ::1 
+      #- 192.168.0.0/24
+   #- type: homeassistant
+
+# Lovelace Mode
+lovelace:
+  mode: yaml
+
+# Cloud
+cloud:
+
+# Informações sobre o sistema e seus componentes. Também permite executar ferramentas de diagnóstico para diagnosticar problemas.
+system_health:
+
+# Ativa o frontend
+frontend: !include configuration/frontend.yaml
+
+# Enables configuration UI
+config:
+
+hassio:
+
+#Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+  base_url: !secret base-url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+updater:
+
+# Permite que você emita comandos de voz do frontend em navegadores ativados
+conversation:
+
+# Descubra alguns dispositivos automaticamente
+discovery:
+  ignore:
+    - yeelight
+
+# Mostrando a localização de dispositivos rastreados no mapa
+map:
+
+# Pessoa - https://www.home-assistant.io/components/person/
+person:
+
+# Nível de registro de atividades
+logger:
+  default: warning
 
 # Text to speech
 tts:
+  # Google (google_say) - https://www.home-assistant.io/components/google_translate/
   - platform: google_translate
+    language: 'pt-br'
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+    # Watson TTS - https://www.home-assistant.io/components/watson_tts/
+  #- platform: watson_tts
+    #watson_url: https://gateway-wdc.watsonplatform.net/text-to-speech/api
+    #watson_apikey: !secret watson_apikey
+    #voice: pt-BR_IsabelaVoice
 
  # Criando o componente
 wake_on_lan:
@@ -40,5 +117,3 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 switch: !include switches.yaml
-
-
