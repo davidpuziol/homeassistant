@@ -1,1 +1,2 @@
-2020-02-08 03:54:25 ERROR (MainThread) [homeassistant.core] Error doing job: Unclosed connection
+2020-02-08 04:09:56 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=21 from 2020-02-08 07:06:31.948646)
+2020-02-08 04:10:14 WARNING (MainThread) [homeassistant.setup] Setup of joaoapps_join is taking over 10 seconds.
